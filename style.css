@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 html,
 body {
@@ -24,6 +25,8 @@ ul {
 }
 a {
   color: white;
+  font-size: 17px;
+  margin-right: 50px;
   text-decoration: none;
 }
 .container {
@@ -42,19 +45,22 @@ nav {
   justify-content: space-between;
   color: white;
   align-items: center;
-  padding: 80px 0;
+  padding: 20px 0;
 }
 .logo {
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 600;
 }
 button {
   padding: 10px 15px;
   border: none;
   transition: 0.2s ease-in-out;
+  margin-top: 10px;
 }
 button:hover {
   transition: 0.2s ease-in-out;
+  background-color: #ff1915;
+  color: #f9f6ff;
   opacity: 0.8;
 }
 nav ul {
@@ -107,10 +113,14 @@ nav ul li:hover {
 }
 .primary-btn {
   background-color: var(--red600);
+  margin-top: 40px;
   color: white;
 }
 .secondary-btn {
   background-color: var(--purple300);
+  border-radius: 5px;
+  margin-top: 60px;
+  margin-bottom: 5x;
   color: white;
 }
 .about-music {
@@ -118,9 +128,10 @@ nav ul li:hover {
   display: grid;
   text-align: center;
   place-items: center;
-  gap: 50px;
-  margin-bottom: 50px;
+  gap: 10px;
+  margin-bottom: 30px;
 }
+
 .video-section {
   background-image: url(images/video.png);
   min-height: 800px;
@@ -172,4 +183,9 @@ nav ul li:hover {
   display: flex;
   justify-content: center;
   color: white;
+}
+
+.mac-img img {
+  max-width: 100%; /* Ensure the image does not exceed its container's width */
+  height: auto; /* Maintain aspect ratio */
 }
