@@ -42,7 +42,7 @@ nav {
   justify-content: space-between;
   color: white;
   align-items: center;
-  padding: 20px 0;
+  padding: 80px 0;
 }
 .logo {
   font-size: 32px;
@@ -120,4 +120,56 @@ nav ul li:hover {
   place-items: center;
   gap: 50px;
   margin-bottom: 50px;
+}
+.video-section {
+  background-image: url(images/video.png);
+  min-height: 800px;
+  display: grid;
+  place-items: center;
+  color: white;
+  text-align: center;
+}
+.video-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.hero_section,
+.video-section {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gift-section {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+  gap: 50px;
+}
+.gift-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-upper {
+  background-color: var(--purple600);
+  padding: 20px;
+}
+.footer-upper .container {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+.footer-upper h4 {
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+.footer-lower {
+  background-color: var(--purple300);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
 }
